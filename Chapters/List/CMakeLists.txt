@@ -1,0 +1,1 @@
+add_executable(List task.cpp)

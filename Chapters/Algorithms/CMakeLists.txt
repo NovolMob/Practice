@@ -1,0 +1,5 @@
+add_subdirectory(Accumulate)
+add_subdirectory(Accumulate2)
+add_subdirectory(Sort)
+add_subdirectory(Sort2)
+add_subdirectory(Search)

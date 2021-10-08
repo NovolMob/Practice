@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CLionProjects/Practice/Chapters/DataStructure/Tree/task.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+string
+-
+cmath
+-
+

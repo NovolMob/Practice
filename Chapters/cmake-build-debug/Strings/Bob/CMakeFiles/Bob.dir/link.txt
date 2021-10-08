@@ -1,0 +1,3 @@
+D:\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\Bob.dir/objects.a
+D:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\Bob.dir/objects.a @CMakeFiles\Bob.dir\objects1.rsp
+D:\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Bob.dir/objects.a -Wl,--no-whole-archive -o Bob.exe -Wl,--out-implib,libBob.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Bob.dir\linklibs.rsp

@@ -1,0 +1,7 @@
+D:\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\CLionProjects\Practice
+CMake Error at Chapters/Strings/CMakeLists.txt:1 (add_executable):
+  add_executable called with incorrect number of arguments
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/CLionProjects/Practice/cmake-build-debug/CMakeFiles/CMakeOutput.log".

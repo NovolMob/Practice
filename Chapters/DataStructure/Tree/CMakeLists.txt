@@ -1,0 +1,1 @@
+add_executable(Tree task.cpp)

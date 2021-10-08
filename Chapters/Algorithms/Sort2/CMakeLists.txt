@@ -1,0 +1,1 @@
+add_executable(Sort2 task.cpp)

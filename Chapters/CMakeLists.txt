@@ -1,0 +1,6 @@
+add_subdirectory(Strings)
+add_subdirectory(Array)
+add_subdirectory(Vector)
+add_subdirectory(List)
+add_subdirectory(Algorithms)
+add_subdirectory(DataStructure)

@@ -1,0 +1,3 @@
+D:\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\FirstAccumulate.dir/objects.a
+D:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\FirstAccumulate.dir/objects.a @CMakeFiles\FirstAccumulate.dir\objects1.rsp
+D:\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\FirstAccumulate.dir/objects.a -Wl,--no-whole-archive -o FirstAccumulate.exe -Wl,--out-implib,libFirstAccumulate.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FirstAccumulate.dir\linklibs.rsp
