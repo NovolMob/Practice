@@ -323,6 +323,45 @@ Tree/fast:
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree\CMakeFiles\Tree.dir\build.make DataStructure/Tree/CMakeFiles/Tree.dir/build
 .PHONY : Tree/fast
 
+#=============================================================================
+# Target rules for targets named Tree2
+
+# Build rule for target.
+Tree2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tree2
+.PHONY : Tree2
+
+# fast build rule for target.
+Tree2/fast:
+	$(MAKE) $(MAKESILENT) -f DataStructure\Tree2\CMakeFiles\Tree2.dir\build.make DataStructure/Tree2/CMakeFiles/Tree2.dir/build
+.PHONY : Tree2/fast
+
+#=============================================================================
+# Target rules for targets named Tree3
+
+# Build rule for target.
+Tree3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tree3
+.PHONY : Tree3
+
+# fast build rule for target.
+Tree3/fast:
+	$(MAKE) $(MAKESILENT) -f DataStructure\Tree3\CMakeFiles\Tree3.dir\build.make DataStructure/Tree3/CMakeFiles/Tree3.dir/build
+.PHONY : Tree3/fast
+
+#=============================================================================
+# Target rules for targets named CircularBuffer
+
+# Build rule for target.
+CircularBuffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CircularBuffer
+.PHONY : CircularBuffer
+
+# fast build rule for target.
+CircularBuffer/fast:
+	$(MAKE) $(MAKESILENT) -f DataStructure\CircularBuffer\CMakeFiles\CircularBuffer.dir\build.make DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/build
+.PHONY : CircularBuffer/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -333,6 +372,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Bob
 	@echo ... CipherSquare
+	@echo ... CircularBuffer
 	@echo ... FirstAccumulate
 	@echo ... FirstAccumulate2
 	@echo ... FirstArray
@@ -346,6 +386,8 @@ help:
 	@echo ... Sort2
 	@echo ... Substring
 	@echo ... Tree
+	@echo ... Tree2
+	@echo ... Tree3
 	@echo ... Vector
 .PHONY : help
 

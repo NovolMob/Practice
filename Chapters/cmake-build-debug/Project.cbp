@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Strings\;CMake Files\Strings\Isograms\;CMake Files\Strings\Bob\;CMake Files\Strings\CipherSquare\;CMake Files\Strings\Substring\;CMake Files\Array\;CMake Files\Array\ArraysValues\;CMake Files\Vector\;CMake Files\List\;CMake Files\Algorithms\;CMake Files\Algorithms\Accumulate\;CMake Files\Algorithms\Accumulate2\;CMake Files\Algorithms\Sort\;CMake Files\Algorithms\Sort2\;CMake Files\Algorithms\Search\;CMake Files\DataStructure\;CMake Files\DataStructure\Tree\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Strings\;CMake Files\Strings\Isograms\;CMake Files\Strings\Bob\;CMake Files\Strings\CipherSquare\;CMake Files\Strings\Substring\;CMake Files\Array\;CMake Files\Array\ArraysValues\;CMake Files\Vector\;CMake Files\List\;CMake Files\Algorithms\;CMake Files\Algorithms\Accumulate\;CMake Files\Algorithms\Accumulate2\;CMake Files\Algorithms\Sort\;CMake Files\Algorithms\Sort2\;CMake Files\Algorithms\Search\;CMake Files\DataStructure\;CMake Files\DataStructure\Tree\;CMake Files\DataStructure\Tree2\;CMake Files\DataStructure\Tree3\;CMake Files\DataStructure\CircularBuffer\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/CLionProjects/Practice/Chapters/cmake-build-debug"/>
@@ -709,6 +709,132 @@
 					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Tree2">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Tree2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 Tree2"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Tree2/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Tree2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 Tree2/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Tree3">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Tree3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 Tree3"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Tree3/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Tree3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 Tree3/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/Tree3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircularBuffer">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/CircularBuffer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 CircularBuffer"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircularBuffer/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/CircularBuffer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 CircularBuffer/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/Algorithms/Accumulate/first.cpp">
 			<Option target="FirstAccumulate"/>
@@ -737,8 +863,17 @@
 		<Unit filename="D:/CLionProjects/Practice/Chapters/Array/ArraysValues/second.cpp">
 			<Option target="SecondArray"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/CircularBuffer/task.cpp">
+			<Option target="CircularBuffer"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree/task.cpp">
 			<Option target="Tree"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree2/task.cpp">
+			<Option target="Tree2"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree3/task.cpp">
+			<Option target="Tree3"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/List/task.cpp">
 			<Option target="List"/>
@@ -811,6 +946,15 @@
 		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\DataStructure\Tree\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DataStructure\Tree2\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DataStructure\Tree3\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/CircularBuffer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DataStructure\CircularBuffer\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

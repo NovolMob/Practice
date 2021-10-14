@@ -11,8 +11,8 @@ int main() {
         std::cin >> num;
         array.push_back(num);
     }
-    std::sort(array.begin(), array.end());
-//    std::sort(array.begin(), array.end(), std::greater<>());
+//    std::sort(array.begin(), array.end());
+    std::sort(array.begin(), array.end(), std::greater<>());
     for (int i = 0; i < count; ++i) {
         std::cout << array[i] << " ";
     }

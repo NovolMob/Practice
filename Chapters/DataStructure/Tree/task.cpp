@@ -5,100 +5,116 @@
 #include <cmath>
 
 const int NULL_VERTEX = -1;
+const char SPACE = ' ';
 
-int** create_tree_array(int n) {
-    int** tree = new int*[n];
-    for (int i = 0; i < n; ++i) {
-        tree[i] = new int[2]{NULL_VERTEX, NULL_VERTEX};
-    }
-    return tree;
-}
+struct Vertex {
+    int number;
+    Vertex* left = nullptr;
+    Vertex* right = nullptr;
 
-void read_tree(int** tree, int n) {
-    for (int i = 0; i < n - 1; ++i) {
-        int first, second;
-        std::cin >> first >> second;
-        if (tree[first - 1][0] != NULL_VERTEX) {
-            tree[first - 1][1] = second - 1;
-        } else {
-            tree[first - 1][0] = second - 1;
-        }
-    }
-}
+    Vertex(int number): number(number) {}
 
-int find_peak(int** tree, int n) {
-    std::vector<int> was;
-    for (int i = 0; i < n; ++i) {
-        was.push_back(tree[i][0]);
-        was.push_back(tree[i][1]);
+    int get_width() {
+        return get_left_width() + 1 + get_right_width();
     }
-    for (int i = 0; i < n; ++i) {
-        if (std::find(was.begin(), was.end(), i) == was.end()) return i;
-    }
-    return NULL_VERTEX;
-}
 
-std::vector<std::vector<int>> sort_to_levels(int** tree, int n, int peak) {
-    std::vector<std::vector<int>> levels = {{peak}};
-    int last_level_id = 0;
-    while (last_level_id < levels.size()) {
-        bool push = false;
-        std::vector<int> level;
-        std::vector<int> vertices = levels[last_level_id];
-        for (const auto &item : vertices) {
-            for (int i = 0; i < 2; ++i) {
-                if (item >= 0) {
-                    level.push_back(tree[item][i]);
-                    push = true;
-                }
+    int get_left_width() {
+        return (left != nullptr) ? left->get_width() : 1;
+    }
+
+    int get_right_width() {
+        return (right != nullptr) ? right->get_width() : 1;
+    }
+
+    std::vector<std::string> get_drawing_strings(bool is_left = false, bool is_right = false) {
+        std::vector<std::string> strings;
+        int left_width = get_left_width();
+        int right_width = get_right_width();
+        std::string left_space = std::string(left_width, SPACE);
+        std::string right_space = std::string(right_width, SPACE);
+        std::string first = left_space + std::to_string(number) + right_space;
+
+        if (is_left) {
+            for (int i = 0; i < right_width; ++i) {
+                strings.push_back(std::string(first.size() - i - 1, SPACE) + "/" + std::string(i, SPACE));
+            }
+        } else if (is_right) {
+            for (int i = 0; i < left_width; ++i) {
+                strings.push_back(std::string(i, SPACE) + '\\' + std::string(first.size() - i - 1, SPACE));
             }
         }
-        last_level_id++;
-        if (push) levels.push_back(level);
+
+        strings.push_back(first);
+
+        std::vector<std::string> left_strings;
+        if (left != nullptr) left_strings = left->get_drawing_strings(true);
+
+        std::vector<std::string> right_strings;
+        if (right != nullptr) right_strings = right->get_drawing_strings(false, true);
+
+        for (int i = 0; i < std::max(left_strings.size(), right_strings.size()); ++i) {
+            std::string left_string = (i < left_strings.size()) ? left_strings[i] : left_space;
+            std::string right_string = (i < right_strings.size()) ? right_strings[i] : right_space;
+            strings.push_back(left_string + " " + right_string);
+        }
+        return strings;
     }
-    return levels;
+
+    void add_connect(Vertex* vertex) {
+        if (left == nullptr) left = vertex; else right = vertex;
+    }
+};
+
+std::vector<Vertex*> create_vertices(int n) {
+    std::vector<Vertex*> vertices;
+    for (int i = 0; i < n; ++i) {
+        vertices.push_back(new Vertex(i + 1));
+    }
+    return vertices;
 }
 
-std::string create_string_with_vertices(std::vector<int> vertices, int width) {
-    std::string space = std::string((int) (width - vertices.size()) / (2 * vertices.size()), ' ');
-    std::string result;
-    for (const auto &item : vertices) {
-        std::string num = " ";
-        if (item != NULL_VERTEX) {
-            num = std::to_string(item + 1);
-        }
-        result.append(space + num + space);
+void read_connections(std::vector<Vertex*> vertices) {
+    int size = vertices.size();
+    for (int i = 0; i < size - 1; ++i) {
+        int first, second;
+        std::cin >> first >> second;
+        vertices[first - 1]->add_connect(vertices[second - 1]);
     }
-    return result;
+}
+
+Vertex* find_peak(std::vector<Vertex*> vertices) {
+    int count = vertices.size();
+    bool was[count];
+    for (int i = 0; i < count; ++i) {
+        was[i] = false;
+    }
+    for (const auto &item : vertices) {
+        if (item->left != nullptr) was[item->left->number - 1] = true;
+        if (item->right != nullptr) was[item->right->number - 1] = true;
+    }
+    for (int i = 0; i < count; ++i) {
+        if (!was[i]) return vertices[i];
+    }
+    return nullptr;
 }
 
 int main() {
     int n;
     std::cin >> n;
-    int** tree = create_tree_array(n);
-    read_tree(tree, n);
+    std::vector<Vertex*> vertices = create_vertices(n);
+    read_connections(vertices);
 
-    int peak = find_peak(tree, n);
-    if (peak == NULL_VERTEX) {
+    Vertex* peak = find_peak(vertices);
+    if (peak == nullptr) {
+        std::cout << "Error. Peak not found.";
         return 1;
     }
 
-    std::vector<std::vector<int>> levels = sort_to_levels(tree, n, peak);
-
-    int width = 15;
-    for (const auto &item : levels) {
-        std::cout << create_string_with_vertices(item, width) << std::endl;
+    std::vector<std::string> output = peak->get_drawing_strings();
+    for (const auto &item : output) {
+        std::cout << item << std::endl;
     }
 }
-
-//    for (int i = 0; i < n; ++i) {
-//        int vertex = i + 1;
-//        for (int j = 0; j < 2; ++j) {
-//            int edge = tree[i][j];
-//            if (edge != NULL_VERTEX)
-//                printf("%d -> %d\n", vertex, (tree[i][j] + 1));
-//        }
-//    }
 
 /*
 7
@@ -106,7 +122,7 @@ int main() {
 4 6
 2 1
 6 5
-7 3
+2 3
 6 7
  */
 
