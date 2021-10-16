@@ -45,6 +45,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/CLionProjects/Practice/Chapters/cmake-build-debug/List/cmake_install.cmake")
   include("D:/CLionProjects/Practice/Chapters/cmake-build-debug/Algorithms/cmake_install.cmake")
   include("D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/cmake_install.cmake")
+  include("D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/cmake_install.cmake")
+  include("D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/cmake_install.cmake")
 
 endif()
 

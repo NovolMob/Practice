@@ -362,6 +362,45 @@ CircularBuffer/fast:
 	$(MAKE) $(MAKESILENT) -f DataStructure\CircularBuffer\CMakeFiles\CircularBuffer.dir\build.make DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/build
 .PHONY : CircularBuffer/fast
 
+#=============================================================================
+# Target rules for targets named Anagram
+
+# Build rule for target.
+Anagram: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Anagram
+.PHONY : Anagram
+
+# fast build rule for target.
+Anagram/fast:
+	$(MAKE) $(MAKESILENT) -f Hashing\Anagram\CMakeFiles\Anagram.dir\build.make Hashing/Anagram/CMakeFiles/Anagram.dir/build
+.PHONY : Anagram/fast
+
+#=============================================================================
+# Target rules for targets named Collisions
+
+# Build rule for target.
+Collisions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Collisions
+.PHONY : Collisions
+
+# fast build rule for target.
+Collisions/fast:
+	$(MAKE) $(MAKESILENT) -f Hashing\Collisions\CMakeFiles\Collisions.dir\build.make Hashing/Collisions/CMakeFiles/Collisions.dir/build
+.PHONY : Collisions/fast
+
+#=============================================================================
+# Target rules for targets named CountingWords
+
+# Build rule for target.
+CountingWords: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CountingWords
+.PHONY : CountingWords
+
+# fast build rule for target.
+CountingWords/fast:
+	$(MAKE) $(MAKESILENT) -f Map\CountingWords\CMakeFiles\CountingWords.dir\build.make Map/CountingWords/CMakeFiles/CountingWords.dir/build
+.PHONY : CountingWords/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -370,9 +409,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Anagram
 	@echo ... Bob
 	@echo ... CipherSquare
 	@echo ... CircularBuffer
+	@echo ... Collisions
+	@echo ... CountingWords
 	@echo ... FirstAccumulate
 	@echo ... FirstAccumulate2
 	@echo ... FirstArray

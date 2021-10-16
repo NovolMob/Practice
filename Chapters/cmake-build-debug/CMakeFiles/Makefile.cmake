@@ -45,7 +45,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../DataStructure/Tree/CMakeLists.txt"
   "../DataStructure/Tree2/CMakeLists.txt"
   "../DataStructure/Tree3/CMakeLists.txt"
+  "../Hashing/Anagram/CMakeLists.txt"
+  "../Hashing/CMakeLists.txt"
+  "../Hashing/Collisions/CMakeLists.txt"
   "../List/CMakeLists.txt"
+  "../Map/CMakeLists.txt"
+  "../Map/CountingWords/CMakeLists.txt"
+  "../Map/Search/CMakeLists.txt"
   "../Strings/Bob/CMakeLists.txt"
   "../Strings/CMakeLists.txt"
   "../Strings/CipherSquare/CMakeLists.txt"
@@ -87,6 +93,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "DataStructure/Tree2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "DataStructure/Tree3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "DataStructure/CircularBuffer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Hashing/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Hashing/Anagram/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Hashing/Collisions/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Map/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Map/Search/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Map/CountingWords/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -110,4 +122,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "DataStructure/Tree2/CMakeFiles/Tree2.dir/DependInfo.cmake"
   "DataStructure/Tree3/CMakeFiles/Tree3.dir/DependInfo.cmake"
   "DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/DependInfo.cmake"
+  "Hashing/Anagram/CMakeFiles/Anagram.dir/DependInfo.cmake"
+  "Hashing/Collisions/CMakeFiles/Collisions.dir/DependInfo.cmake"
+  "Map/Search/CMakeFiles/Search.dir/DependInfo.cmake"
+  "Map/CountingWords/CMakeFiles/CountingWords.dir/DependInfo.cmake"
   )

@@ -68,6 +68,8 @@ all: Vector/all
 all: List/all
 all: Algorithms/all
 all: DataStructure/all
+all: Hashing/all
+all: Map/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +79,8 @@ preinstall: Vector/preinstall
 preinstall: List/preinstall
 preinstall: Algorithms/preinstall
 preinstall: DataStructure/preinstall
+preinstall: Hashing/preinstall
+preinstall: Map/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -86,6 +90,8 @@ clean: Vector/clean
 clean: List/clean
 clean: Algorithms/clean
 clean: DataStructure/clean
+clean: Hashing/clean
+clean: Map/clean
 .PHONY : clean
 
 #=============================================================================
@@ -311,6 +317,54 @@ DataStructure/Tree3/clean: DataStructure/Tree3/CMakeFiles/Tree3.dir/clean
 .PHONY : DataStructure/Tree3/clean
 
 #=============================================================================
+# Directory level rules for directory Hashing
+
+# Recursive "all" directory target.
+Hashing/all: Hashing/Anagram/all
+Hashing/all: Hashing/Collisions/all
+.PHONY : Hashing/all
+
+# Recursive "preinstall" directory target.
+Hashing/preinstall: Hashing/Anagram/preinstall
+Hashing/preinstall: Hashing/Collisions/preinstall
+.PHONY : Hashing/preinstall
+
+# Recursive "clean" directory target.
+Hashing/clean: Hashing/Anagram/clean
+Hashing/clean: Hashing/Collisions/clean
+.PHONY : Hashing/clean
+
+#=============================================================================
+# Directory level rules for directory Hashing/Anagram
+
+# Recursive "all" directory target.
+Hashing/Anagram/all: Hashing/Anagram/CMakeFiles/Anagram.dir/all
+.PHONY : Hashing/Anagram/all
+
+# Recursive "preinstall" directory target.
+Hashing/Anagram/preinstall:
+.PHONY : Hashing/Anagram/preinstall
+
+# Recursive "clean" directory target.
+Hashing/Anagram/clean: Hashing/Anagram/CMakeFiles/Anagram.dir/clean
+.PHONY : Hashing/Anagram/clean
+
+#=============================================================================
+# Directory level rules for directory Hashing/Collisions
+
+# Recursive "all" directory target.
+Hashing/Collisions/all: Hashing/Collisions/CMakeFiles/Collisions.dir/all
+.PHONY : Hashing/Collisions/all
+
+# Recursive "preinstall" directory target.
+Hashing/Collisions/preinstall:
+.PHONY : Hashing/Collisions/preinstall
+
+# Recursive "clean" directory target.
+Hashing/Collisions/clean: Hashing/Collisions/CMakeFiles/Collisions.dir/clean
+.PHONY : Hashing/Collisions/clean
+
+#=============================================================================
 # Directory level rules for directory List
 
 # Recursive "all" directory target.
@@ -324,6 +378,54 @@ List/preinstall:
 # Recursive "clean" directory target.
 List/clean: List/CMakeFiles/List.dir/clean
 .PHONY : List/clean
+
+#=============================================================================
+# Directory level rules for directory Map
+
+# Recursive "all" directory target.
+Map/all: Map/Search/all
+Map/all: Map/CountingWords/all
+.PHONY : Map/all
+
+# Recursive "preinstall" directory target.
+Map/preinstall: Map/Search/preinstall
+Map/preinstall: Map/CountingWords/preinstall
+.PHONY : Map/preinstall
+
+# Recursive "clean" directory target.
+Map/clean: Map/Search/clean
+Map/clean: Map/CountingWords/clean
+.PHONY : Map/clean
+
+#=============================================================================
+# Directory level rules for directory Map/CountingWords
+
+# Recursive "all" directory target.
+Map/CountingWords/all: Map/CountingWords/CMakeFiles/CountingWords.dir/all
+.PHONY : Map/CountingWords/all
+
+# Recursive "preinstall" directory target.
+Map/CountingWords/preinstall:
+.PHONY : Map/CountingWords/preinstall
+
+# Recursive "clean" directory target.
+Map/CountingWords/clean: Map/CountingWords/CMakeFiles/CountingWords.dir/clean
+.PHONY : Map/CountingWords/clean
+
+#=============================================================================
+# Directory level rules for directory Map/Search
+
+# Recursive "all" directory target.
+Map/Search/all: Map/Search/CMakeFiles/Search.dir/all
+.PHONY : Map/Search/all
+
+# Recursive "preinstall" directory target.
+Map/Search/preinstall:
+.PHONY : Map/Search/preinstall
+
+# Recursive "clean" directory target.
+Map/Search/clean: Map/Search/CMakeFiles/Search.dir/clean
+.PHONY : Map/Search/clean
 
 #=============================================================================
 # Directory level rules for directory Strings
@@ -431,7 +533,7 @@ Vector/clean: Vector/CMakeFiles/Vector.dir/clean
 Strings/Isograms/CMakeFiles/Isograms.dir/all:
 	$(MAKE) $(MAKESILENT) -f Strings\Isograms\CMakeFiles\Isograms.dir\build.make Strings/Isograms/CMakeFiles/Isograms.dir/depend
 	$(MAKE) $(MAKESILENT) -f Strings\Isograms\CMakeFiles\Isograms.dir\build.make Strings/Isograms/CMakeFiles/Isograms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target Isograms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target Isograms"
 .PHONY : Strings/Isograms/CMakeFiles/Isograms.dir/all
 
 # Build rule for subdir invocation for target.
@@ -457,7 +559,7 @@ Strings/Isograms/CMakeFiles/Isograms.dir/clean:
 Strings/Bob/CMakeFiles/Bob.dir/all:
 	$(MAKE) $(MAKESILENT) -f Strings\Bob\CMakeFiles\Bob.dir\build.make Strings/Bob/CMakeFiles/Bob.dir/depend
 	$(MAKE) $(MAKESILENT) -f Strings\Bob\CMakeFiles\Bob.dir\build.make Strings/Bob/CMakeFiles/Bob.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Bob"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target Bob"
 .PHONY : Strings/Bob/CMakeFiles/Bob.dir/all
 
 # Build rule for subdir invocation for target.
@@ -483,7 +585,7 @@ Strings/Bob/CMakeFiles/Bob.dir/clean:
 Strings/CipherSquare/CMakeFiles/CipherSquare.dir/all:
 	$(MAKE) $(MAKESILENT) -f Strings\CipherSquare\CMakeFiles\CipherSquare.dir\build.make Strings/CipherSquare/CMakeFiles/CipherSquare.dir/depend
 	$(MAKE) $(MAKESILENT) -f Strings\CipherSquare\CMakeFiles\CipherSquare.dir\build.make Strings/CipherSquare/CMakeFiles/CipherSquare.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target CipherSquare"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target CipherSquare"
 .PHONY : Strings/CipherSquare/CMakeFiles/CipherSquare.dir/all
 
 # Build rule for subdir invocation for target.
@@ -509,7 +611,7 @@ Strings/CipherSquare/CMakeFiles/CipherSquare.dir/clean:
 Strings/Substring/CMakeFiles/Substring.dir/all:
 	$(MAKE) $(MAKESILENT) -f Strings\Substring\CMakeFiles\Substring.dir\build.make Strings/Substring/CMakeFiles/Substring.dir/depend
 	$(MAKE) $(MAKESILENT) -f Strings\Substring\CMakeFiles\Substring.dir\build.make Strings/Substring/CMakeFiles/Substring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target Substring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=37,38 "Built target Substring"
 .PHONY : Strings/Substring/CMakeFiles/Substring.dir/all
 
 # Build rule for subdir invocation for target.
@@ -535,7 +637,7 @@ Strings/Substring/CMakeFiles/Substring.dir/clean:
 Array/ArraysValues/CMakeFiles/FirstArray.dir/all:
 	$(MAKE) $(MAKESILENT) -f Array\ArraysValues\CMakeFiles\FirstArray.dir\build.make Array/ArraysValues/CMakeFiles/FirstArray.dir/depend
 	$(MAKE) $(MAKESILENT) -f Array\ArraysValues\CMakeFiles\FirstArray.dir\build.make Array/ArraysValues/CMakeFiles/FirstArray.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target FirstArray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target FirstArray"
 .PHONY : Array/ArraysValues/CMakeFiles/FirstArray.dir/all
 
 # Build rule for subdir invocation for target.
@@ -561,7 +663,7 @@ Array/ArraysValues/CMakeFiles/FirstArray.dir/clean:
 Array/ArraysValues/CMakeFiles/SecondArray.dir/all:
 	$(MAKE) $(MAKESILENT) -f Array\ArraysValues\CMakeFiles\SecondArray.dir\build.make Array/ArraysValues/CMakeFiles/SecondArray.dir/depend
 	$(MAKE) $(MAKESILENT) -f Array\ArraysValues\CMakeFiles\SecondArray.dir\build.make Array/ArraysValues/CMakeFiles/SecondArray.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target SecondArray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target SecondArray"
 .PHONY : Array/ArraysValues/CMakeFiles/SecondArray.dir/all
 
 # Build rule for subdir invocation for target.
@@ -587,7 +689,7 @@ Array/ArraysValues/CMakeFiles/SecondArray.dir/clean:
 Vector/CMakeFiles/Vector.dir/all:
 	$(MAKE) $(MAKESILENT) -f Vector\CMakeFiles\Vector.dir\build.make Vector/CMakeFiles/Vector.dir/depend
 	$(MAKE) $(MAKESILENT) -f Vector\CMakeFiles\Vector.dir\build.make Vector/CMakeFiles/Vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=37,38 "Built target Vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=45,46 "Built target Vector"
 .PHONY : Vector/CMakeFiles/Vector.dir/all
 
 # Build rule for subdir invocation for target.
@@ -613,7 +715,7 @@ Vector/CMakeFiles/Vector.dir/clean:
 List/CMakeFiles/List.dir/all:
 	$(MAKE) $(MAKESILENT) -f List\CMakeFiles\List.dir\build.make List/CMakeFiles/List.dir/depend
 	$(MAKE) $(MAKESILENT) -f List\CMakeFiles\List.dir\build.make List/CMakeFiles/List.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target List"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target List"
 .PHONY : List/CMakeFiles/List.dir/all
 
 # Build rule for subdir invocation for target.
@@ -639,7 +741,7 @@ List/CMakeFiles/List.dir/clean:
 Algorithms/Accumulate/CMakeFiles/FirstAccumulate.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate\CMakeFiles\FirstAccumulate.dir\build.make Algorithms/Accumulate/CMakeFiles/FirstAccumulate.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate\CMakeFiles\FirstAccumulate.dir\build.make Algorithms/Accumulate/CMakeFiles/FirstAccumulate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target FirstAccumulate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target FirstAccumulate"
 .PHONY : Algorithms/Accumulate/CMakeFiles/FirstAccumulate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -665,7 +767,7 @@ Algorithms/Accumulate/CMakeFiles/FirstAccumulate.dir/clean:
 Algorithms/Accumulate/CMakeFiles/SecondAccumulate.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate\CMakeFiles\SecondAccumulate.dir\build.make Algorithms/Accumulate/CMakeFiles/SecondAccumulate.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate\CMakeFiles\SecondAccumulate.dir\build.make Algorithms/Accumulate/CMakeFiles/SecondAccumulate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target SecondAccumulate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=27,28 "Built target SecondAccumulate"
 .PHONY : Algorithms/Accumulate/CMakeFiles/SecondAccumulate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -691,7 +793,7 @@ Algorithms/Accumulate/CMakeFiles/SecondAccumulate.dir/clean:
 Algorithms/Accumulate2/CMakeFiles/FirstAccumulate2.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate2\CMakeFiles\FirstAccumulate2.dir\build.make Algorithms/Accumulate2/CMakeFiles/FirstAccumulate2.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate2\CMakeFiles\FirstAccumulate2.dir\build.make Algorithms/Accumulate2/CMakeFiles/FirstAccumulate2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target FirstAccumulate2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target FirstAccumulate2"
 .PHONY : Algorithms/Accumulate2/CMakeFiles/FirstAccumulate2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -717,7 +819,7 @@ Algorithms/Accumulate2/CMakeFiles/FirstAccumulate2.dir/clean:
 Algorithms/Accumulate2/CMakeFiles/SecondAccumulate2.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate2\CMakeFiles\SecondAccumulate2.dir\build.make Algorithms/Accumulate2/CMakeFiles/SecondAccumulate2.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Accumulate2\CMakeFiles\SecondAccumulate2.dir\build.make Algorithms/Accumulate2/CMakeFiles/SecondAccumulate2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target SecondAccumulate2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target SecondAccumulate2"
 .PHONY : Algorithms/Accumulate2/CMakeFiles/SecondAccumulate2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -743,7 +845,7 @@ Algorithms/Accumulate2/CMakeFiles/SecondAccumulate2.dir/clean:
 Algorithms/Sort/CMakeFiles/Sort.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Sort\CMakeFiles\Sort.dir\build.make Algorithms/Sort/CMakeFiles/Sort.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Sort\CMakeFiles\Sort.dir\build.make Algorithms/Sort/CMakeFiles/Sort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target Sort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=33,34 "Built target Sort"
 .PHONY : Algorithms/Sort/CMakeFiles/Sort.dir/all
 
 # Build rule for subdir invocation for target.
@@ -769,7 +871,7 @@ Algorithms/Sort/CMakeFiles/Sort.dir/clean:
 Algorithms/Sort2/CMakeFiles/Sort2.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Sort2\CMakeFiles\Sort2.dir\build.make Algorithms/Sort2/CMakeFiles/Sort2.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Sort2\CMakeFiles\Sort2.dir\build.make Algorithms/Sort2/CMakeFiles/Sort2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=27,28 "Built target Sort2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=35,36 "Built target Sort2"
 .PHONY : Algorithms/Sort2/CMakeFiles/Sort2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -795,7 +897,7 @@ Algorithms/Sort2/CMakeFiles/Sort2.dir/clean:
 Algorithms/Search/CMakeFiles/Search.dir/all:
 	$(MAKE) $(MAKESILENT) -f Algorithms\Search\CMakeFiles\Search.dir\build.make Algorithms/Search/CMakeFiles/Search.dir/depend
 	$(MAKE) $(MAKESILENT) -f Algorithms\Search\CMakeFiles\Search.dir\build.make Algorithms/Search/CMakeFiles/Search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target Search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target Search"
 .PHONY : Algorithms/Search/CMakeFiles/Search.dir/all
 
 # Build rule for subdir invocation for target.
@@ -821,7 +923,7 @@ Algorithms/Search/CMakeFiles/Search.dir/clean:
 DataStructure/Tree/CMakeFiles/Tree.dir/all:
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree\CMakeFiles\Tree.dir\build.make DataStructure/Tree/CMakeFiles/Tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree\CMakeFiles\Tree.dir\build.make DataStructure/Tree/CMakeFiles/Tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target Tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=39,40 "Built target Tree"
 .PHONY : DataStructure/Tree/CMakeFiles/Tree.dir/all
 
 # Build rule for subdir invocation for target.
@@ -847,7 +949,7 @@ DataStructure/Tree/CMakeFiles/Tree.dir/clean:
 DataStructure/Tree2/CMakeFiles/Tree2.dir/all:
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree2\CMakeFiles\Tree2.dir\build.make DataStructure/Tree2/CMakeFiles/Tree2.dir/depend
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree2\CMakeFiles\Tree2.dir\build.make DataStructure/Tree2/CMakeFiles/Tree2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=33,34 "Built target Tree2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=41,42 "Built target Tree2"
 .PHONY : DataStructure/Tree2/CMakeFiles/Tree2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -873,7 +975,7 @@ DataStructure/Tree2/CMakeFiles/Tree2.dir/clean:
 DataStructure/Tree3/CMakeFiles/Tree3.dir/all:
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree3\CMakeFiles\Tree3.dir\build.make DataStructure/Tree3/CMakeFiles/Tree3.dir/depend
 	$(MAKE) $(MAKESILENT) -f DataStructure\Tree3\CMakeFiles\Tree3.dir\build.make DataStructure/Tree3/CMakeFiles/Tree3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=35,36 "Built target Tree3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=43,44 "Built target Tree3"
 .PHONY : DataStructure/Tree3/CMakeFiles/Tree3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -899,7 +1001,7 @@ DataStructure/Tree3/CMakeFiles/Tree3.dir/clean:
 DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/all:
 	$(MAKE) $(MAKESILENT) -f DataStructure\CircularBuffer\CMakeFiles\CircularBuffer.dir\build.make DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f DataStructure\CircularBuffer\CMakeFiles\CircularBuffer.dir\build.make DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target CircularBuffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target CircularBuffer"
 .PHONY : DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -917,6 +1019,110 @@ CircularBuffer: DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/rule
 DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f DataStructure\CircularBuffer\CMakeFiles\CircularBuffer.dir\build.make DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/clean
 .PHONY : DataStructure/CircularBuffer/CMakeFiles/CircularBuffer.dir/clean
+
+#=============================================================================
+# Target rules for target Hashing/Anagram/CMakeFiles/Anagram.dir
+
+# All Build rule for target.
+Hashing/Anagram/CMakeFiles/Anagram.dir/all:
+	$(MAKE) $(MAKESILENT) -f Hashing\Anagram\CMakeFiles\Anagram.dir\build.make Hashing/Anagram/CMakeFiles/Anagram.dir/depend
+	$(MAKE) $(MAKESILENT) -f Hashing\Anagram\CMakeFiles\Anagram.dir\build.make Hashing/Anagram/CMakeFiles/Anagram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Anagram"
+.PHONY : Hashing/Anagram/CMakeFiles/Anagram.dir/all
+
+# Build rule for subdir invocation for target.
+Hashing/Anagram/CMakeFiles/Anagram.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Hashing/Anagram/CMakeFiles/Anagram.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 0
+.PHONY : Hashing/Anagram/CMakeFiles/Anagram.dir/rule
+
+# Convenience name for target.
+Anagram: Hashing/Anagram/CMakeFiles/Anagram.dir/rule
+.PHONY : Anagram
+
+# clean rule for target.
+Hashing/Anagram/CMakeFiles/Anagram.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Hashing\Anagram\CMakeFiles\Anagram.dir\build.make Hashing/Anagram/CMakeFiles/Anagram.dir/clean
+.PHONY : Hashing/Anagram/CMakeFiles/Anagram.dir/clean
+
+#=============================================================================
+# Target rules for target Hashing/Collisions/CMakeFiles/Collisions.dir
+
+# All Build rule for target.
+Hashing/Collisions/CMakeFiles/Collisions.dir/all:
+	$(MAKE) $(MAKESILENT) -f Hashing\Collisions\CMakeFiles\Collisions.dir\build.make Hashing/Collisions/CMakeFiles/Collisions.dir/depend
+	$(MAKE) $(MAKESILENT) -f Hashing\Collisions\CMakeFiles\Collisions.dir\build.make Hashing/Collisions/CMakeFiles/Collisions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target Collisions"
+.PHONY : Hashing/Collisions/CMakeFiles/Collisions.dir/all
+
+# Build rule for subdir invocation for target.
+Hashing/Collisions/CMakeFiles/Collisions.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Hashing/Collisions/CMakeFiles/Collisions.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 0
+.PHONY : Hashing/Collisions/CMakeFiles/Collisions.dir/rule
+
+# Convenience name for target.
+Collisions: Hashing/Collisions/CMakeFiles/Collisions.dir/rule
+.PHONY : Collisions
+
+# clean rule for target.
+Hashing/Collisions/CMakeFiles/Collisions.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Hashing\Collisions\CMakeFiles\Collisions.dir\build.make Hashing/Collisions/CMakeFiles/Collisions.dir/clean
+.PHONY : Hashing/Collisions/CMakeFiles/Collisions.dir/clean
+
+#=============================================================================
+# Target rules for target Map/Search/CMakeFiles/Search.dir
+
+# All Build rule for target.
+Map/Search/CMakeFiles/Search.dir/all:
+	$(MAKE) $(MAKESILENT) -f Map\Search\CMakeFiles\Search.dir\build.make Map/Search/CMakeFiles/Search.dir/depend
+	$(MAKE) $(MAKESILENT) -f Map\Search\CMakeFiles\Search.dir\build.make Map/Search/CMakeFiles/Search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target Search"
+.PHONY : Map/Search/CMakeFiles/Search.dir/all
+
+# Build rule for subdir invocation for target.
+Map/Search/CMakeFiles/Search.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Map/Search/CMakeFiles/Search.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 0
+.PHONY : Map/Search/CMakeFiles/Search.dir/rule
+
+# Convenience name for target.
+Search: Map/Search/CMakeFiles/Search.dir/rule
+.PHONY : Search
+
+# clean rule for target.
+Map/Search/CMakeFiles/Search.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Map\Search\CMakeFiles\Search.dir\build.make Map/Search/CMakeFiles/Search.dir/clean
+.PHONY : Map/Search/CMakeFiles/Search.dir/clean
+
+#=============================================================================
+# Target rules for target Map/CountingWords/CMakeFiles/CountingWords.dir
+
+# All Build rule for target.
+Map/CountingWords/CMakeFiles/CountingWords.dir/all:
+	$(MAKE) $(MAKESILENT) -f Map\CountingWords\CMakeFiles\CountingWords.dir\build.make Map/CountingWords/CMakeFiles/CountingWords.dir/depend
+	$(MAKE) $(MAKESILENT) -f Map\CountingWords\CMakeFiles\CountingWords.dir\build.make Map/CountingWords/CMakeFiles/CountingWords.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target CountingWords"
+.PHONY : Map/CountingWords/CMakeFiles/CountingWords.dir/all
+
+# Build rule for subdir invocation for target.
+Map/CountingWords/CMakeFiles/CountingWords.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Map/CountingWords/CMakeFiles/CountingWords.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\Practice\Chapters\cmake-build-debug\CMakeFiles 0
+.PHONY : Map/CountingWords/CMakeFiles/CountingWords.dir/rule
+
+# Convenience name for target.
+CountingWords: Map/CountingWords/CMakeFiles/CountingWords.dir/rule
+.PHONY : CountingWords
+
+# clean rule for target.
+Map/CountingWords/CMakeFiles/CountingWords.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Map\CountingWords\CMakeFiles\CountingWords.dir\build.make Map/CountingWords/CMakeFiles/CountingWords.dir/clean
+.PHONY : Map/CountingWords/CMakeFiles/CountingWords.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Strings\;CMake Files\Strings\Isograms\;CMake Files\Strings\Bob\;CMake Files\Strings\CipherSquare\;CMake Files\Strings\Substring\;CMake Files\Array\;CMake Files\Array\ArraysValues\;CMake Files\Vector\;CMake Files\List\;CMake Files\Algorithms\;CMake Files\Algorithms\Accumulate\;CMake Files\Algorithms\Accumulate2\;CMake Files\Algorithms\Sort\;CMake Files\Algorithms\Sort2\;CMake Files\Algorithms\Search\;CMake Files\DataStructure\;CMake Files\DataStructure\Tree\;CMake Files\DataStructure\Tree2\;CMake Files\DataStructure\Tree3\;CMake Files\DataStructure\CircularBuffer\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Strings\;CMake Files\Strings\Isograms\;CMake Files\Strings\Bob\;CMake Files\Strings\CipherSquare\;CMake Files\Strings\Substring\;CMake Files\Array\;CMake Files\Array\ArraysValues\;CMake Files\Vector\;CMake Files\List\;CMake Files\Algorithms\;CMake Files\Algorithms\Accumulate\;CMake Files\Algorithms\Accumulate2\;CMake Files\Algorithms\Sort\;CMake Files\Algorithms\Sort2\;CMake Files\Algorithms\Search\;CMake Files\DataStructure\;CMake Files\DataStructure\Tree\;CMake Files\DataStructure\Tree2\;CMake Files\DataStructure\Tree3\;CMake Files\DataStructure\CircularBuffer\;CMake Files\Hashing\;CMake Files\Hashing\Anagram\;CMake Files\Hashing\Collisions\;CMake Files\Map\;CMake Files\Map\Search\;CMake Files\Map\CountingWords\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/CLionProjects/Practice/Chapters/cmake-build-debug"/>
@@ -835,6 +835,174 @@
 					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/DataStructure/CircularBuffer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Anagram">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Anagram.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 Anagram"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Anagram/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Anagram.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 Anagram/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Anagram/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collisions">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Collisions.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 Collisions"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collisions/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Collisions.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 Collisions/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Hashing/Collisions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Search">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Search.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 Search"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Search/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Search.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 Search/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/Search/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CountingWords">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/CountingWords.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 CountingWords"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CountingWords/fast">
+				<Option output="D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/CountingWords.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 CountingWords/fast"/>
+					<CompileFile command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/Practice/Chapters/cmake-build-debug/Map/CountingWords/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/Algorithms/Accumulate/first.cpp">
 			<Option target="FirstAccumulate"/>
@@ -875,8 +1043,20 @@
 		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/Tree3/task.cpp">
 			<Option target="Tree3"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Hashing/Anagram/task.cpp">
+			<Option target="Anagram"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Hashing/Collisions/task.cpp">
+			<Option target="Collisions"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/List/task.cpp">
 			<Option target="List"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Map/CountingWords/task.cpp">
+			<Option target="CountingWords"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Map/Search/task.cpp">
+			<Option target="Search"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/Strings/Bob/task.cpp">
 			<Option target="Bob"/>
@@ -955,6 +1135,24 @@
 		</Unit>
 		<Unit filename="D:/CLionProjects/Practice/Chapters/DataStructure/CircularBuffer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\DataStructure\CircularBuffer\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Hashing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Hashing\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Hashing/Anagram/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Hashing\Anagram\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Hashing/Collisions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Hashing\Collisions\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Map/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Map\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Map/Search/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Map\Search\"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/Practice/Chapters/Map/CountingWords/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Map\CountingWords\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
