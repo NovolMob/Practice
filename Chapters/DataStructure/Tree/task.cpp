@@ -2,9 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include <cmath>
 
-const int NULL_VERTEX = -1;
 const char SPACE = ' ';
 
 struct Vertex {
@@ -15,7 +13,7 @@ struct Vertex {
     Vertex(int number): number(number) {}
 
     int get_width() {
-        return get_left_width() + 1 + get_right_width();
+        return get_left_width() + (std::to_string(number).length()) + get_right_width();
     }
 
     int get_left_width() {
@@ -55,7 +53,7 @@ struct Vertex {
         for (int i = 0; i < std::max(left_strings.size(), right_strings.size()); ++i) {
             std::string left_string = (i < left_strings.size()) ? left_strings[i] : left_space;
             std::string right_string = (i < right_strings.size()) ? right_strings[i] : right_space;
-            strings.push_back(left_string + " " + right_string);
+            strings.push_back(left_string + std::string((std::to_string(number).length()), SPACE) + right_string);
         }
         return strings;
     }
